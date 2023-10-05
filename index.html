@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/style.css">
+        <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+        <link rel = "icon" href = "https://www.javascripttutorial.net/wp-content/uploads/2020/02/favicon-150x150.png" type = "image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>E-Commerce</title>
+    </head>
+    <body>
+        <!-- header section -->
+        
+        <header id="header" class="header-scrolled">
+            <a href="#" class="logo"><img src="product/logo.png" alt=""></a>
+            <ul class="nav">
+                <li><a href="#home"><ion-icon name="home-outline"></ion-icon></a></li>
+                <li><a href="#product1">Product</a></li>
+                <li><a href="shopping.html">Shopping</a></li>
+                <li><a href="#contact">Contact  us </a></li>
+            </ul>
+            <ul class="util">
+                <li><a href="#"><ion-icon name="search-outline"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="person-outline"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="heart-outline"></ion-icon></a></li>
+                <li><a href="#"><ion-icon name="bag-outline"></ion-icon></a></li>
+            </ul>
+        </header>
+
+        <!-- hero banner section -->
+        
+        <div id="banner" class="banner">
+            <!-- left part -->
+            <div class="women">
+                <img src="./Images/women-1.jpg" alt="">
+                <a href="#" class="switch-btn" onclick="switchBanner('left')">Women</a>
+                <div class="content">
+                    <h1>Ladies Fashion</h1>
+                    <p>Women's wear is outfits made specifically for and worn by women. Salwar suits, saaris, lehnga etc. in Indian tradition and Skirts, shirts, sweaters, trousers, coats, chemises, and jeans, etc., in western countries are examples of common women's clothing.</p>
+                    <a href="#">Shop around<ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </div>
+            <!-- middle part -->
+            <div class="men">
+                <img src="./Images/men-1.jpg" alt="">
+                <a href="#" class="switch-btn"  onclick="switchBanner('middle')">Men</a>
+                <div class="content">
+                    <h1>men with taste</h1>
+                    <p>He walks with confidence in his clothes, very comfortable and appreciates all aspects of fashion: open minded and flexible, but perhaps not a risk taker. Neutral colors and classic cuts dominate his wardrobe</p>
+                    <a href="#">Shop around<ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </div>
+
+        <!-- right past -->
+            <div class="special">
+                <img src="./Images/special-2.jpg" alt="">
+                <a href="#" class="switch-btn"  onclick="switchBanner('right')">Special</a>
+                <div class="content">
+                    <h1 class="spheading">Be Cool Girl</h1>
+                    <p>Our purpose is to bring beauty and fun to your life with a simple innovative product, bringing new colors, comfort, and joy to your houses and making you happier! Therefore, we are constantly updating our product offerings to ensure that we are always offering the latest trends and styles.</p>
+                    <a href="#">Shop around<ion-icon name="cart-outline"></ion-icon></a>
+                </div>
+            </div>
+            <a href="#" class="reset" onclick="resetBanner()">
+                <ion-icon name="power-outline"></ion-icon></a>
+        </div>
+    
+    <!-- main section  -->
+
+        <main>
+            <!-- call us section  -->
+            <section class="call-up">
+                <div class="call-up-box">
+                    <ion-icon name="cube-outline"></ion-icon>
+                    <div>
+                        <h4>free shipping</h4>
+                        <p>One way to offer free shipping without too much difficulty is to include</p>
+
+                    </div>
+                </div>
+
+                <div class="call-up-box">
+                    <ion-icon name="card-outline"></ion-icon>
+                    <div>
+                        <h4>security payment</h4>
+                        <p>Security of Payment refers to any system designed to ensure that contract</p>
+
+                    </div>
+                </div>
+
+                <div class="call-up-box">
+                    <ion-icon name="cash-outline"></ion-icon>
+                    <div>
+                        <h4>14 days return</h4>
+                        <p>You usually have 14 days to return the item after telling the seller</p>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- about section -->
+            <section id="about" class="about">
+                <div class="left">
+                    <div class="promotion about-box">
+                        <img src="Images/pd.jpg" alt="">
+                        <div class="description">
+                            <h4>promotion * discount</h4>
+                            <p>While discounts refer only to the price and actual sale of a product, promotions are far more varied and include a wide range of marketing and sales tactics that can start before someone even considers becoming a customer</p>
+                            <a href="#">Shop now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="style about-box">
+                        <img src="Images/ts.jpg" alt="">
+                        <div class="description">
+                            <h4>Trending style</h4>
+                            <p>Follow Fashion Bloggers and Influencers. One of the best ways you can ensure you stay up to date with the latest trends in fashion is by following experts online. ...</p>
+                            <a href="#">Shop now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="collection about-box">
+                        <img src="Images/sc1.jpg" alt="">
+                        <div class="description">
+                            <h4>spring collection</h4>
+                            <p>Likely the softest and arguably one of the more comfortable ready-to-wear themes to come out of the spring 2023 season were the liquidy dresses, tops, and skirts made from soft jersey fabrics. </p>
+                            <a href="#">Shop now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    <div class="discovery about-box">
+                        <img src="Images/fd.jpg" alt="">
+                        <div class="description">
+                            <h4>fashion discount</h4>
+                            <p>Yes, Zara offers a wide range of discounts and offers for existing customers. Customers can check out the 'Deals' section on the website to avail the latest offers.</p>
+                            <a href="#">Shop now <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- product section -->
+
+            <section id="product1" class="section-p1">
+                <div class="container1">
+                    <h2>Our Products</h2>
+                    <p>Summer Collection New Modern Design</p>
+                    <div class="clothes">
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/f1.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Adidas</span>
+                                    <h5>Cartoon Astronaut T-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/f2.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Puma</span>
+                                    <h5>Cartoon T-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/f3.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Levi's</span>
+                                    <h5>T-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/f4.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Peter England</span>
+                                    <h5>Half-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span><i class="fa-solid fa-cart-shopping fa-sm cart"></i></span>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="clothes">
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/f5.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">H&M</span>
+                                    <h5>Flower T-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/f6.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Zara</span>
+                                    <h5>Colrful T-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/f7.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Prada</span>
+                                    <h5>Pajamat</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/f8.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Calvin Klein</span>
+                                    <h5>Girl Top</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span><i class="fa-solid fa-cart-shopping fa-sm cart"></i></span>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- -------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+                    <div class="clothes">
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/n5.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Adidas</span>
+                                    <h5>Cartoon Astronaut T-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/n6.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Adidas</span>
+                                    <h5>Cartoon Astronaut T-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/n7.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Adidas</span>
+                                    <h5>Cartoon Astronaut T-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <a href="#"><i class="fa-solid fa-cart-shopping fa-sm"></i></a>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pro-container">
+                            <div class="pro">
+                                <img src="product/n8.jpg" alt="">
+                                <div class="des">
+                                    <span class="heading">Adidas</span>
+                                    <h5>Cartoon Astronaut T-Shirt</h5>
+                                    <div class="star">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span><i class="fa-solid fa-cart-shopping fa-sm cart"></i></span>
+                                    </div>
+                                    <h4>$80</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="auto-slider">
+                <div class="logos">
+                    <div class="logos-slide">
+                        <img src="Images/zara.png" alt="">
+                        <img src="Images/H&M-Logo.svg.png" alt="">
+                        <img src="Images/puma.webp" alt="">
+                        <img src="Images/prada-log.png" alt="">
+                        <img src="Images/nike.jpg" alt="">
+                        <img src="Images/rl2.jpg" alt="">
+                        <img src="Images/Calvin-Klein-logo.png" alt="">
+                        <img src="Images/Levis-Logo.png" alt="">
+                        <img src="Images/GAP_Logo.svg.png" alt="">
+                        <img src="Images/dng.png" alt="">
+                        <img src="Images/hurley.png" alt="">
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class="contact-us" id="contact">
+                <div class="contact-banner">
+                    <h1>#Let's_Talk</h1>
+                    <h3>LEAVE A MESSAGE, We Love To Hear From You..!!</h3>
+                </div>
+                <div class="contact-map">
+                    <div class="text-contact">
+                        <h5>get in touch</h5>
+                        <h1>visit one of our agency locations or contact us today leave a message</h1>
+                        <h4>Head Office</h4>
+                        <div class="contact-links">
+                            <div class="location">
+                                <i class="fa-regular fa-map fa-sm"></i>
+                                <h4>56 Glass House Street Glassglow New Delhi</h4>
+                            </div>
+                            <div class="mail">
+                                <i class="fa-regular fa-envelope fa-sm"></i>
+                                <h4>Contact2499@example.com</h4>
+                            </div>
+                            <div class="number">
+                                <i class="fa-solid fa-phone fa-sm"></i>
+                                <h4>+99 0112553 0112553</h4>
+                            </div>
+                            <div class="timing">
+                                <i class="fa-regular fa-clock fa-sm"></i>
+                                <h4>Monday to Saturday 9:00AM to 6:00PM</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="map-contact">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111998.93561775496!2d76.98622259336099!3d28.690641576769963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d057453168b4b%3A0xc37ee203f1a8c14!2sZudio%2C%20Janakpuri%20(West)!5e0!3m2!1sen!2sin!4v1696097490129!5m2!1sen!2sin" width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="footer">
+                <div class="footer-container">
+                    <div class="footer-links">
+                        <div class="shop">
+                            <h4>SHOP</h4>
+                            <ul>
+                                <li><a href="#">Ladies</a></li>
+                                <li><a href="#">Men</a></li>
+                                <li><a href="#">Baby</a></li>
+                                <li><a href="#">Kids</a></li>
+                                <li><a href="#">Sports</a></li>
+                                <li><a href="#">Collection</a></li>
+                            </ul>
+                        </div>
+                        <div class="shop">
+                            <h4>CORPORATE INFO</h4>
+                            <ul>
+                                <li><a href="#">Career at H&M</a></li>
+                                <li><a href="#">About H&M group</a></li>
+                                <li><a href="#">Sustainability H&M Group</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Investor relations</a></li>
+                                <li><a href="#">Corporate governance</a></li>
+                            </ul>
+                        </div>
+                        <div class="shop">
+                            <h4>HELP</h4>
+                            <ul>
+                                <li><a href="#">Customer Service</a></li>
+                                <li><a href="#">My H&M</a></li>
+                                <li><a href="#">Find a store</a></li>
+                                <li><a href="#">Legal & Privacy</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">Report a scam</a></li>
+                                <li><a href="#">Cookie Notice</a></li>
+                            </ul>
+                        </div>
+                        <div class="shop">
+                            <h4>ABOUT US</h4>
+                            <ul>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Sustainability</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="social">
+                        <i class="fa-brands fa-facebook fa-sm"></i>
+                        <i class="fa-brands fa-x-twitter fa-sm"></i>
+                        <i class="fa-brands fa-instagram fa-sm"></i>
+                        <i class="fa-brands fa-youtube fa-sm"></i>
+                        <i class="fa-brands fa-pinterest fa-sm"></i>
+                    </div>
+                    <p>The content of this site is copyright-protected and is the property of H & M Hennes & Mauritz AB.</p>
+                    <div class="footer-logo">
+                        <a href="#home">
+                        <img src="product/logo.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <script src="./JS/script.js" defer></script>
+</body>
+</html>
